@@ -1,0 +1,18 @@
+go 1.25.0
+
+use (
+	./part1-language/01-first-app
+	./part1-language/02-go-tools
+	./part1-language/03-types-values-pointers
+	./part1-language/04-operations-conversions
+	./part1-language/05-flow-control
+	./part1-language/06-arrays-slices-maps
+	./part1-language/07-functions
+	./part1-language/08-function-types
+	./part1-language/09-structs
+	./part1-language/10-methods-interfaces
+	./part1-language/11-packages
+	./part1-language/12-type-interface-composition
+	./part1-language/13-goroutines-channels
+	./part1-language/14-error-handling
+)
