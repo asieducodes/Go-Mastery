@@ -37,7 +37,7 @@ func welcomeHandler(writer http.ResponseWriter, request *http.Request) {
 	templates["welcome"].Execute(writer, nil)
 }
 func listHandler(writer http.ResponseWriter, request *http.Request) {
-	templates["list"].Execute(writer, nil)
+	templates["list"].Execute(writer, responses)
 }
 
 type formData struct {
@@ -64,7 +64,7 @@ func formHandler(writer http.ResponseWriter, request *http.Request) {
 			errors = append(errors, "Please enter your name")
 		}
 		if responseData.Email == "" {
-			errors = append(errors, "Please enter your email")
+			errors = append(errors, "Please enter your email address")
 		}
 		if responseData.Phone == "" {
 			errors = append(errors, "Please enter your phone number")
